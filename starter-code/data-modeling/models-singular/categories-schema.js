@@ -8,19 +8,19 @@ const categoriesSchema = mongoose.Schema({
     description:{ type: String, required: true,},
 });
 categoriesSchema.post('findOne', function (document) {
-    // console.log('--After finding one player--');
-    // console.log({document});
-    // console.log(this);
+    console.log('--After finding one player--');
+    console.log({document});
+    console.log(this);
 });
 
 categoriesSchema.post('init', function () {
-    // console.log('--After initializing a player--');
-    // console.log(this);
+    console.log('--After initializing a player--');
+    console.log(this);
 });
 
 categoriesSchema.post('save', function (doc) {
-    // console.log('--After saving a player--');
-    // console.log(this);
+    console.log('--After saving a player--');
+    console.log(this);
 });
 
 
