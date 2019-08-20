@@ -13,21 +13,21 @@ mongoose.connect(MONGOOSE_URI, { useNewUrlParser: true });
 
 const categories = new Categories();
 
-// Test category
-// const createdCategory = categories.create({
-//     name: 'Mr Krabbs',
-//     description: 'Business Owner'
-// })
-//     .then(savedCategory => {
-//         console.log(savedCategory);
-//         return categories.get(savedCategory._id);
-//     })
-//     .then(returnedCategory => console.log(returnedCategory))
-//     .catch(error => console.log(error));
+Test category
+const createdCategory = categories.create({
+    name: 'Mr Krabbs',
+    description: 'Business Owner'
+})
+    .then(savedCategory => {
+        console.log(savedCategory);
+        return categories.get(savedCategory._id);
+    })
+    .then(returnedCategory => console.log(returnedCategory))
+    .catch(error => console.log(error));
 
-// categories.getByName('Mr Krabbs')
-//     .then(foundName => console.log(foundName))
-//     .catch(error => console.error(error));
+categories.getByName('Mr Krabbs')
+    .then(foundName => console.log(foundName))
+    .catch(error => console.error(error));
 
 categories.getByName('Mr Krabbs')
     .then(console.log)
